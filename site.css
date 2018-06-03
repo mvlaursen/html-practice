@@ -1,2 +1,2 @@
 .ready {color: green}
-.not-ready {background-color: gray; color: yellow}
+.not-ready {background-color: gray; color: yellow; display: inline-block}
