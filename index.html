@@ -9,24 +9,7 @@
         <p class="not-ready" id="document-ready-indicator">Is document ready?</p>
 
         <script src="../html-practice/js/jquery-3.3.1.min.js"></script>
-        <script>
-            var myNamespace = (function() {
-                return {
-                    postInitialDelay: function() {
-                        $("#document-ready-indicator")
-                            .removeClass("not-ready")
-                            .addClass("ready");
-                    },
-
-                    createInitialDelay: function() {
-                        setTimeout(this.postInitialDelay, 2000);
-                    }
-                };
-            })();
-            
-            $(document).ready(function() {
-                myNamespace.createInitialDelay();
-            });
+        <script src="../html-practice/js/site.js"></script>
         </script>
     </body>
 </html>
