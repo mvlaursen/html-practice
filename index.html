@@ -6,6 +6,19 @@
         <link rel="stylesheet" type="text/css" href="site.css" />
     </head>
     <body>
-        <p class="safe-operation">Hello, world!</p>
+        <p class="not-ready" id="document-ready-indicator">Is document ready?</p>
+
+        <script src="../html-practice/js/jquery-3.3.1.min.js"></script>
+        <script>
+            function documentReady() {
+                $("#document-ready-indicator")
+                    .removeClass("not-ready")
+                    .addClass("ready");
+            }
+
+            $(document).ready(function() {
+                setTimeout(documentReady, 2000);
+            });
+        </script>
     </body>
 </html>

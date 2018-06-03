@@ -1,1 +1,2 @@
-.safe-operation {color: green};
+.ready {color: green}
+.not-ready {background-color: gray; color: yellow}
