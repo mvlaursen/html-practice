@@ -1,6 +1,7 @@
 var myNamespace = (function() {
     var _crazyCatCss = {
         borderRadius: "100%",
+        height: "120px",
         opacity: "1.0",
     }
     
@@ -12,6 +13,7 @@ var myNamespace = (function() {
 
             $("#crazy-cat")
                 .css("border-radius", _crazyCatCss.borderRadius)
+                .css("height", _crazyCatCss.height)
                 .css("opacity", _crazyCatCss.opacity);
             _crazyCatWidth = 0;
         },
@@ -23,6 +25,10 @@ var myNamespace = (function() {
                 .css("border-radius", "50%")
                 .css("opacity", "0.5");
             setTimeout(this.postInitialDelay, 2000);
+
+            var aEl = document.getElementById("crazy-cat");  
+            _crazyCatCss.height = aEl.style.height;
+            aEl.style.height= "10px";
         }
     };
 })();

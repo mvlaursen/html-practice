@@ -1,4 +1,4 @@
 img.photo {display: block}
 
-p.not-ready {background-color: gray; color: yellow; display: inline-block}
-p.ready {color: green; display: inline-block}
+.not-ready {background-color: gray; color: yellow; display: inline-block}
+.ready {color: green; display: inline-block}
