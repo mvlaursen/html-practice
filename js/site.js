@@ -1,7 +1,7 @@
 var myNamespace = (function() {
     var _crazyCatCss = {
         borderRadius: "100%",
-        height: "120px",
+        height: "452px",
         opacity: "1.0",
     }
     
@@ -28,6 +28,7 @@ var myNamespace = (function() {
 
             var aEl = document.getElementById("crazy-cat");  
             _crazyCatCss.height = aEl.style.height;
+            aEl.style.width= "550px";
             aEl.style.height= "10px";
         }
     };
