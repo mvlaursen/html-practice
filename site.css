@@ -1,2 +1,4 @@
-.ready {color: green}
-.not-ready {background-color: gray; color: yellow; display: inline-block}
+img.photo {display: block}
+
+p.not-ready {background-color: gray; color: yellow; display: inline-block}
+p.ready {color: green; display: inline-block}
